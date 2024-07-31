@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+    <link rel="stylesheet" href="clac.css">
+    <script src="calc.js"></script>
+</head>
+<body>
+    <div class="container">
+        <section class="numbers">
+            <header>
+                <h1 class="calc">CALCULATOR</h1>
+            </header>
+            <div class="display">
+                <input type="text" name="display" id="display">
+            </div>
+            <div class="firrow">
+                <input type="button" value="C" onclick="clearDisplay()">
+                <input type="button" value="D" onclick="deleteLastChar()">
+                <input type="button" value="00" onclick="appendToDisplay('00')">
+                <input type="button" value="/" onclick="appendToDisplay('/')">
+            </div>
+            <div class="secrow">
+                <input type="button" value="9" onclick="appendToDisplay('9')">
+                <input type="button" value="8" onclick="appendToDisplay('8')">
+                <input type="button" value="7" onclick="appendToDisplay('7')">
+                <input type="button" value="*" onclick="appendToDisplay('*')">
+            </div>
+            <div class="thrdrow">
+                <input type="button" value="6"onclick="appendToDisplay('6')">
+                <input type="button" value="5"onclick="appendToDisplay('5')">
+                <input type="button" value="4"onclick="appendToDisplay('4')">
+                <input type="button" value="-"onclick="appendToDisplay('-')">
+            </div>
+            <div class="forrow">
+                <input type="button" value="3"onclick="appendToDisplay('3')">
+                <input type="button" value="2"onclick="appendToDisplay('2')">
+                <input type="button" value="1"onclick="appendToDisplay('1')">
+                <input type="button" value="+"onclick="appendToDisplay('+')">
+            </div>
+            <div class="lastrow">
+                <input type="button" value="0"onclick="appendToDisplay('0')">
+                <input type="button" value="."onclick="appendToDisplay('.')">
+                <input type="button" id="equal" value="=" onclick="calculateResult()">
+            </div>
+        </section>
+    </div>
+</body>
+</html>
