@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: skyblue;
+    text-align: center;
+}
+.container{
+    height: 50vh;
+    
+}
+h1{
+    background: linear-gradient(blue 33%,rgb(174, 0, 255),red);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 100px;
+}
+.game {
+    display: grid;
+    grid-template-columns: 90px 90px 90px;
+    column-gap: 3px; 
+    row-gap: 3px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+.box {
+    width: 90px;
+    height: 90px;
+    font-size: 30px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    color: black;
+    font-weight: bolder;
+    border: 2px solid #000;
+    border-radius: 10px;
+}
+.box:hover {
+    background-color: #00d9ff;
+    transform: scale(1.1,1.1);
+}
+#resetbtn{
+    margin-top: 30px;
+    font-size: 20px;
+    padding: 10px;
+    color: aqua;
+    background-color: black;
+    border-radius: 10px;
+    position: relative;
+}
+#newbtn{
+    margin-top: 50px;
+    font-size: 20px;
+    padding: 10px;
+    color: aqua;
+    background-color: black;
+    border-radius: 10px;
+}
+.win-msg{
+    padding: 10px;
+    height: 100vh;
+    top: 50%;
+    width: 40vh;
+    position: relative;
+    left: 40%;
+    border-radius: 10px;
+}
+.hide{
+    display: none;
+}
+@media (max-width: 600px) {
+    .game {
+        grid-template-columns: repeat(3, 80px);
+        grid-gap: 5px;
+    }
+
+    .box {
+        width: 80px;
+        height: 80px;
+        font-size: 1.5em;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    #resetbtn, #newbtn {
+        font-size: 0.8em;
+        padding: 8px 16px;
+    }
+}
