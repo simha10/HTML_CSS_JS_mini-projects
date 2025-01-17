@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock-Paper-Scissor</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container1">
+      <h1 class="text-center text-white">Rock-Paper-Scissor</h1>
+      <div class="choices">
+        <div class="choice" id="rock">
+          <img src="images/stone.jpeg" />
+        </div>
+        <div class="choice" id="paper">
+          <img src="images/paper.png" />
+        </div>
+        <div class="choice" id="scissors">
+          <img src="images/Scissor.jpg" />
+        </div>
+      </div>
+      <div class="scoreboard">
+        <div class="score">
+          <p>Your score:</p>
+          <p class="userscore" id="user-score">0</p>
+        </div>
+        <div class="score">
+          <p>Bot score:</p>
+          <p id="comp-score">0</p>
+        </div>
+      </div>
+      <div class="reset-button">
+        <button class="btn btn-primary text-black mt-3 px-5 py-3">Reset</button>
+      </div>
+      <div class="msg-container">
+        <p class="msg">Choose Urs</p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

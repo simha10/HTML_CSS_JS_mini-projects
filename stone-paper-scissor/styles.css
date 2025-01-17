@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+    border-bottom: 3px solid;
+}
+
+.container1{
+    margin-top: 5%;
+    width: max-content;
+    border: 3px solid;
+    border-radius: 20px;
+    box-shadow: 7px 0 3px 3px rgb(0, 225, 255);
+}
+
+.choices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.choice{
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.choice img{
+    height: 130px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.scoreboard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.score{
+    font-size: 20px;
+
+    padding: 20px;
+    background:transparent;
+    border: 3px solid slategrey;
+    box-shadow: 0 0 3px 3px blue;
+    color: aquamarine;
+    margin: 10px;
+    border-radius: 20px;
+}
+.msg-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.msg{
+    margin-top: 30px;
+    display: inline;
+    background-color: aquamarine;
+    box-shadow: 0 0 3px 3px rgb(255, 255, 255);
+    padding: 10px 40px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.reset-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    font-size: 30px;
+    box-shadow: 0 0 3px 3px rgb(255, 255, 255);
+}
+button:hover{
+    transform: scale(1.2);
+    transition: transform 0.5s ease-in;
+}
